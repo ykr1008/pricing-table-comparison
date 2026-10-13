@@ -1,0 +1,6 @@
+
+@import "tailwindcss" source(none);
+
+@source "./templates";
+
+@source inline("bg-purple-600 bg-blue-600");

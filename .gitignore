@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Python virtual environments
+part-b/venv/
+__pycache__/
+*.py[cod]
+
+# Flask environment files
+.env

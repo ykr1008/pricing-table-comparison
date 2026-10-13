@@ -1,0 +1,9 @@
+
+{% set color_classes = {
+    'purple': 'bg-purple-600',
+    'blue': 'bg-blue-600'
+} %}
+
+<div class="rounded-lg p-6 text-white {{ color_classes[color] }}">
+    This card uses the {{ color }} colour.
+</div>
