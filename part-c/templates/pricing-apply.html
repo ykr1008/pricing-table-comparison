@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans - Tailwind Apply</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
+</head>
+<body class="min-h-screen bg-gray-50 px-6 py-12">
+  <main class="mx-auto max-w-6xl">
+    <header class="mb-10 text-center">
+      <h1 class="text-3xl font-bold text-gray-900">Choose Your Plan</h1>
+      <p class="mt-3 text-gray-600">Simple pricing for every stage.</p>
+    </header>
+
+    <section class="grid gap-6 md:grid-cols-3" aria-label="Pricing plans">
+      {% for plan in plans %}
+        <article class="pricing-card">
+          <h2 class="text-xl font-bold text-gray-900">{{ plan.name }}</h2>
+          <p class="mt-2 text-sm text-gray-600">{{ plan.description }}</p>
+          <p class="pricing-price">{{ plan.price }}</p>
+
+          <ul class="mt-6 space-y-3 text-gray-700">
+            {% for feature in plan.features %}
+              <li>✓ {{ feature }}</li>
+            {% endfor %}
+          </ul>
+
+          <a href="#" class="pricing-button">{{ plan.button }}</a>
+        </article>
+      {% endfor %}
+    </section>
+  </main>
+</body>
+</html>
