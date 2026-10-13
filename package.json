@@ -1,0 +1,27 @@
+{
+  "name": "pricing-table-comparison",
+  "version": "1.0.0",
+  "description": "A hands-on comparison of building the same responsive pricing table using plain CSS and Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "npx @tailwindcss/cli -i ./tailwind/input.css -o ./tailwind/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykr1008/pricing-table-comparison.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ykr1008/pricing-table-comparison/issues"
+  },
+  "homepage": "https://github.com/ykr1008/pricing-table-comparison#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "lightningcss": "^1.33.0",
+    "lightningcss-cli": "^1.33.0",
+    "tailwindcss": "^4.3.3"
+  }
+}
