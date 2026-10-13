@@ -1,16 +1,58 @@
-# React + Vite
+# Pricing Table: Plain CSS vs Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A hands-on comparison of building the same responsive pricing table using plain CSS and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project compares two approaches to styling a pricing table with three tiers: Starter, Pro, and Business.
 
-## React Compiler
+Both versions will include:
+- Responsive layouts
+- A highlighted middle pricing tier with a badge
+- Hover effects
+- Dark mode
+- Custom brand colours and typography
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
+```text
+pricing-table-comparison/
+├── plain-css/
+│   ├── index.html
+│   └── style.css
+├── tailwind/
+│   ├── index.html
+│   └── input.css
+├── .gitignore
+└── README.md
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Assignment Tasks
+
+### Part A — Build It Twice
+Build the pricing table using plain CSS and Tailwind CSS. Compare handwritten CSS lines, final minified CSS bundle size, build time, and the time needed to change the brand colour and add a badge.
+
+### Part B — Dynamic Class Bug
+Demonstrate a dynamically generated Tailwind class that is missing from the production build, explain why it happens, and implement two fixes.
+
+### Part C — Refactor for Reuse
+Compare reusable template/component markup with Tailwind's `@apply` directive.
+
+### Part D — Theme Configuration
+Extend the Tailwind theme with a brand colour palette, a custom font, and an additional spacing value.
+
+### Part E — Written Evaluation
+Evaluate the strongest arguments for and against Tailwind CSS and decide which approach suits a five-person team building a product over two years.
+
+## Technologies
+
+- HTML5
+- CSS3
+- Tailwind CSS
+- Node.js and npm for the Tailwind build process
+
+React is not required for this project.
+
+## Measurements
+
+Results will be recorded after both implementations are completed and tested.
